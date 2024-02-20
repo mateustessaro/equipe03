@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas em texto</title>
+    <style>
+        #quadrado{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            shape-outside: inset(10px 0px 10px 30px );
+            animation: rodar 1.00s linear infinite;
+        }
+        @keyframes rodar{
+            from{
+                transform: rotate(0);
+            } to{
+                transform: rotate(360deg);
+            }
+        }
+        .circulo{
+            float: left;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            shape-outside: circle();
+            clip-path: circle();
+           
+        }
+        .circuloCortado{
+            float: left;
+            width: 300px;
+            height: 300px;
+            margin: 6px;
+            shape-outside: circle(50% at 50%);
+            clip-path: circle(50% at 0);
+            background-color: white;
+           
+        }
+        #ellipse{
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            shape-outside: ellipse(20% 50%);
+            clip-path: ellipse(20% 50%);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shape-outside</h1>
+    <p>Essa propriedade permite que voce defina uma forma para que o texto se envolva
+        e flua ao seu redor.
+    </p>
+    <p>junto a essa propriedade temos algumas formas basicas</p>
+    <p>O elemento que vamos aplicar a forma com propridade 
+        <strong>Shape-outside</strong></p>precisa ter a propriedade <strong>float</strong>
+        <ul>
+            <li>inset()</li>
+            <li>circle()</li>
+            <li>ellipse()</li>
+            <li>polygon()</li>
+        </ul>
+        <h2>inset()</h2>
+        <p>Pode ser usado para criar um retangulo/quadrado com um deslocamento opcional 
+            para o texto que o envolver
+        </p>
+        <div id="quadrado"></div>
+        Banho de mar, mano
+Qual foi?
+Banho de mar, neguin'
+'Vambora, amigo, vamo pra praia
+Sentado no meu escritório, isqueirando meu bong
+Eu fiz um quarto pros negócios bem dentro da minha casa
+Não mexe, deixa que eu faço, eu sempre fui assim
+Se eu não correr atrás do meu
+Não vai ter quem corre pra mim, então
+Bagulho é andar pra frente sem olhar pra trás
+Eu só quero viver em paz com quem só me traz paz
+Eu lido bem com desapego, então tu não me testa
+Mas se tu pedir com jeitinho, amor, nós faz a festa
+Não me cobra presença, hoje meu tempo vale ouro
+Eu tô construindo um castelo todo banhado a ouro
+Deixa mensagem, eu te respondo quando tiver tempo
+Eu tô trabalhando, eu não quero mais voltar pro veneno
+Olha que eu preciso de pouco
+Torrar um baseado com os amigo aqui no morro
+Acordar de manhãzinha com o sol batendo no rosto
+Partir pra Ipanema, ir pra praia fumar um boldo
+Só vivendo pra tu aprender a valorizar teu tempo
+Então deixa a vida me levar que eu ainda tô aprendendo
+Estala outra gelada, aperta outro baseado
+Na relíquia do Novin, mó' saudades do meu levado
+Quer banho de mar? Já é parceiro
+Por isso que eu gosto de tu, parceiro
+Qual é, Tina? Vai lá no barraco
+Pega uns rádio e umas pistolas, tá ligado?
+<h2>circle()</h2>
+<p>O circulo é criado usando a propriedade <trong>shaape-outside</trong></p>
+<p>Pode ser aplicado um <strong>clip-path</strong> com a propriedade correspondente para que o circulo apareça</p>
+<p> A propriedade <strong>clip-path</strong> pode receber a mesma propriedade<strong> shape-outside</strong> para dar a ela a forma padrão de <strong>circle()</strong></p>
+
+<div class="circuloCortado"></div>
+Tira o pente e guarda a pistola
+Depois de contar as droga, esconde a porra da sacola
+Quebra a ponta do quilo pra nóis torra de marola
+Troca a bateria do rádio e dá pro mano da endola
+Hoje é dia de folga, nóis vai tirar uma marola
+Parar pra soltar pipa, torra 70 da orla
+Tomar um banho de mar, na altinha nóis desenrola
+Tomar uma caipirinha estalando, feita na hora
+Acende do balão e manda a fumaça embora
+De óculos escuro, pega a visão das novinha
+Posturadão' de raça, não rende pra patricinha
+Bota as loir Rocinha ou do alto lá da Mangueira
+Santa Marta ou Santo Amaro, ou então Santa Teresa
+Se for pra cair pra pista nóis vai mora em Madureira
+Terrinha onde o malandro mais brabo toma rasteira, vagabundo
+Rio de Janeiro
+Selva mais perigosa do território nacional
+Cheiro de crack nas esquinas
+A chama do isqueiro na lata que ilumina
+As ruas mais bonitas, relaxa e sente a brisa
+A braba da praça que sobe fazendo a neblina
+Então dá um dois, menina
+Vem de 'rolé comigo na cidade mais bonita
+Aproveita a vista linda
+Nóis brindando na praia enquanto ela estala a marquinha
+Me olhando nos olhos falando que quer ser minha
+Cuidado em, meninainha na linha
+Na sul elas nem olha, no baile perde a calcinha
+'Tá tega de racinha
+Nós leva no blindão', só quer paz e muito dinheiro
+Ter um quarto com a vista linda no Rio de Janeiro
+De frente pro Vidiga ou do Cantagalo, 'tá tega
+Quem sabe daTira o pente e guarda a pistola
+Depois de contar as droga, esconde a porra da sacola
+Quebra a ponta do quilo pra nóis torra de marola
+Troca a bateria do rádio e dá pro mano da endola
+Hoje é dia de folga, nóis vai tirar uma marola
+Parar pra soltar pipa, torra 70 da orla
+Tomar um banho de mar, na altinha nóis desenrola
+Tomar uma caipirinha estalando, feita na hora
+Acende do balão e manda a fumaça embora
+De óculos escuro, pega a visão das novinha
+Posturadão' de raça, não rende pra patricinha
+Bota as loir Rocinha ou do alto lá da Mangueira
+Santa Marta ou Santo Amaro, ou então Santa Teresa
+Se for pra cair pra pista nóis vai mora em Madureira
+Terrinha onde o malandro mais brabo toma rasteira, vagabundo
+Rio de Janeiro
+Selva mais perigosa do território nacional
+Cheiro de crack nas esquinas
+A chama do isqueiro na lata que ilumina
+As ruas mais bonitas, relaxa e sente a brisa
+A braba da praça que sobe fazendo a neblina
+Então dá um dois, menina
+Vem de 'rolé comigo na cidade mais bonita
+Aproveita a vista linda
+Nóis brindando na praia enquanto ela estala a marquinha
+Me olhando nos olhos falando que quer ser minha
+Cuidado em, meninainha na linha
+Na sul elas nem olha, no baile perde a calcinha
+'Tá tega de racinha
+Nós leva no blindão', só quer paz e muito dinheiro
+Ter um quarto com a vista linda no Rio de Janeiro
+De frente pro Vidiga ou do Cantagalo, 'tá tega
+Quem sabe da
+<hr>
+<h2>ellipse()</h2>
+<p>Funciona da mesma forma que os circulos, exceto pelo fato de criar uma oval</p>
+<p>Pode definir os valores de x e y assim<strong> ellipse(25 px 50px)</strong></p>
+<div id="ellipse"></div>
+Minha ambição é juntar vários milhão
+Voar sem tirar os pés do chão
+Sonhar pra ter realização
+Ver que o que plantei, não foi em vão
+Isso aqui nunca foi só por cifrão
+Descarrego o sentimento e emoção
+Já vejo minha mãe numa mansão
+Vou lutar até pifar o coração
+É que os primeiros cem mil quando cai na sua conta é inesquecível
+Primeiro você torra, aprende, investe e cresce de nível
+Só não se deixe levar que tudo pode mudar se você mudar seu rumo
+Se não escuta sua mãe, a vida vai te ensinar, somos eternos alunos
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+Minha ambição é juntar vários milhão
+Voar sem tirar os pés do chão
+Sonhar pra ter realização
+Ver que o que plantei, não foi em vão
+Isso aqui nunca foi só por cifrão
+Descarrego o sentimento e emoção
+Já vejo minha mãe numa mansão
+Vou lutar até pifar o coração
+É que os primeiros cem mil quando cai na sua conta é inesquecível
+Primeiro você torra, aprende, investe e cresce de nível
+Só não se deixe levar que tudo pode mudar se você mudar seu rumo
+Se não escuta sua mãe, a vida vai te ensinar, somos eternos alunos
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu cloneMinha ambição é juntar vários milhão
+Voar sem tirar os pés do chão
+Sonhar pra ter realização
+Ver que o que plantei, não foi em vão
+Isso aqui nunca foi só por cifrão
+Descarrego o sentimento e emoção
+Já vejo minha mãe numa mansão
+Vou lutar até pifar o coração
+É que os primeiros cem mil quando cai na sua conta é inesquecível
+Primeiro você torra, aprende, investe e cresce de nível
+Só não se deixe levar que tudo pode mudar se você mudar seu rumo
+Se não escuta sua mãe, a vida vai te ensinar, somos eternos alunos
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu cloneMinha ambição é juntar vários milhão
+Voar sem tirar os pés do chão
+Sonhar pra ter realização
+Ver que o que plantei, não foi em vão
+Isso aqui nunca foi só por cifrão
+Descarrego o sentimento e emoção
+Já vejo minha mãe numa mansão
+Vou lutar até pifar o coração
+É que os primeiros cem mil quando cai na sua conta é inesquecível
+Primeiro você torra, aprende, investe e cresce de nível
+Só não se deixe levar que tudo pode mudar se você mudar seu rumo
+Se não escuta sua mãe, a vida vai te ensinar, somos eternos alunos
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+Acendo um beck e fumo
+Não consumo aquilo que me consome
+Da minha parte do acordo que eu sumo
+Eles tentam, nunca vão ser meu clone
+</body>
+</html>
