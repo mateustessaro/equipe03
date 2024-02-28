@@ -8,6 +8,10 @@ body{
     background-color: rgb(17, 86, 102);
     padding: 0;
     font-size: 1.13em;
+    background-image: url(IMG_20240228_113759.jpg);
+    min-height: 100%;
+    
+
 }
 
 .container{
