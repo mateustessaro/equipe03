@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos do getElementById</title>
+</head>
+
+<body>
+    <h1>Excluir elemento</h1>
+    <button onclick="excluir()">Remover viado</button>
+    <button onclick="aparecerViado()">Aparecer</button>
+    <img src="cidinha.jpg" alt="" id="imagem">
+    
+    <div id="outraImagem">
+        
+    </div>
+    <h1>Modificar o conteudo de um elemento</h1>
+    <div id="meuElemento">Conteúdo Inicial</div>
+    <button onclick="modificar()">Mudar</button>
+    <hr>
+    <h1>Alterar o estilo do elemento</h1>
+    <div id="cor">Texto colorido</div>
+    <button onclick="colorir()">Colorir</button>
+    <hr>
+    <input id="texto" type="text" value="Texto inicial">
+    <button onclick="pegar()">Pegar texto</button>
+    <p id="conteudo"></p>
+    <hr>
+    <h1>Enconder elemento</h1>
+    <div id="esconder">texto para esconder</div>
+    <button onclick="escondertexto()">Esconder</button>
+    <button onclick="aparecertexto()">Aparecer</button>
+
+    
+    <script>
+function excluir(){
+    var elemento = document.getElementById("outraImagem");
+    elemento.parentNode.removeChild(elemento);
+}
+function aparecerViado(){
+    elemento = document.getElementById("imagem");
+    const newImg = document.createElement("img");
+    container = document.getElementById("outraImagem");
+    newImg.src = "cidinha.jpg"
+    container.appendChild(newImg);
+
+}
+
+        function escondertexto(){
+            var elemento = document.getElementById("esconder");
+            elemento.style.display = "none";
+        }
+        function aparecertexto(){
+            var elemento = document.getElementById("esconder");
+            elemento.style.display = "";
+        }
+        
+        function pegar(){
+            var elemento = document.getElementById("texto");
+            var conteudo = document.getElementById("conteudo");
+            var valor = elemento.value;
+            conteudo.innerHTML = valor;
+        }
+        
+        function modificar() {
+            var elemento = document.getElementById("meuElemento");
+            console.log(elemento)
+            elemento.innerHTML = "tessaro";
+        }
+        function colorir(){
+            var elemento = document.getElementById("cor");
+            elemento.style.fontSize = "150px";
+            elemento.style.color = "red";
+            elemento.style.fontWeight = "bold";
+        }
+
+    </script>
+</body>
+
+</html>

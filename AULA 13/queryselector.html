@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O método queryselector()</h1>
+
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <p class="example">Eu sou um parágrafo</p>
+    <div id="nome">Meu nome</div>
+
+    <script>
+        const lista = document.querySelectorAll(".example")
+        for (let i = 0; i < lista.length ; i ++){
+            lista[i].style.backgroundColor = "Turquoise"
+        }
+
+        document.querySelectorAll(".example")[5].style.backgroundColor = "Turquoise"
+
+    </script>
+    
+</body>
+</html>

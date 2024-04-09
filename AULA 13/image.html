@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onmouseover="changeImage()" onmouseout="restoreImage()" src="https://i.kym-cdn.com/entries/icons/facebook/000/049/004/lebronsunshinecover.jpg" width="400" height="380">
+
+<p>YOU ARE MY SUNSHINE.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("oi")) {
+    image.src = "https://i.kym-cdn.com/entries/icons/facebook/000/049/004/lebronsunshinecover.jpg";
+  } else {
+    image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQzs6jcxUX5Fu90lJSh6Sys6sHc6aUXHHMQnNCpO7zg&s";
+  }
+}
+
+function restoreImage() {
+  var image = document.getElementById('myImage');
+  image.src = "https://i.kym-cdn.com/entries/icons/facebook/000/049/004/lebronsunshinecover.jpg";
+}
+</script>
+
+</body>
+</html>
