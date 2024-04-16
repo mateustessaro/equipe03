@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+#cabecalho img{
+    width: 100%;
+    height: 600px;
+}
+
+#container{
+    text-align: center;
+    margin: 50px;
+}
+
+#imagem{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 43vh;
+}
+
+p{
+    cursor: pointer;
+    display: inline;
+    margin-left: 30px;
+}
+#status, #especie, #origem{
+    text-align: center;
+    margin: 30px;
+}
